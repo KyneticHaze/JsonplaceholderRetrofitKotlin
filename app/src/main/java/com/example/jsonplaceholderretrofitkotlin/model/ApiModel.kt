@@ -3,8 +3,8 @@ package com.example.jsonplaceholderretrofitkotlin.model
 import com.google.gson.annotations.SerializedName
 
 data class ApiModel(
-    //@SerializedName("id")
+    @SerializedName("id")
     val id: Int,
-    //@SerializedName("title")
+    @SerializedName("title")
     val title: String
 )
