@@ -1,11 +1,11 @@
 package com.example.jsonplaceholderretrofitkotlin.service
 
 import com.example.jsonplaceholderretrofitkotlin.model.ApiModel
-import retrofit2.Call
+import io.reactivex.rxjava3.core.Observable
 import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("albums")
-    fun getAlbumsData() : Call<List<ApiModel>>
+    @GET("K21-JSONDataSet/master/crypto.json")
+    fun getAlbumsData() : Observable<List<ApiModel>>
 }
